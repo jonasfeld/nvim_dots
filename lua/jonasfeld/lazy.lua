@@ -12,8 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	"nvim-treesitter/nvim-treesitter",
-	"Shatur/neovim-ayu",
-	{'williamboman/mason.nvim'},
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    "nvim-lua/plenary.nvim",
+    "ThePrimeagen/harpoon",
+    "Shatur/neovim-ayu",
+    {'williamboman/mason.nvim'},
 	{'williamboman/mason-lspconfig.nvim'},
 	 -- LSP Support
 	 {
